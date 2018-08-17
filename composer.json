@@ -1,0 +1,44 @@
+{
+    "name": "laramin-fms/theme-default",
+    "description": "Larmain default theme.",
+    "type": "library",
+    "keywords": [
+        "admin",
+        "laramin",
+        "laravel",
+        "php"
+    ],
+    "require": {
+        "illuminate/support": "^5.6",
+        "php": "^7.1",
+        "laraning/boost": "^1.0",
+        "laraning/flame": "^1.0",
+        "doctrine/dbal": "^2.7",
+        "spatie/laravel-permission": "^2.13"
+    },
+    "autoload": {
+        "psr-4": {
+            "Laramin\\Theme\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Laramin\\Theme\\ServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Laramin",
+            "email": "bruno.falcao@laramin.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
